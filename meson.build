@@ -108,5 +108,17 @@ executable('test-build-cxx',
 	   include_directories: [includes_src, includes_include],
 	   install: false)
 
+############ examples ############
+executable('example-enumeration',
+	   'examples/enumeration.c',
+	   dependencies: [dep_libjoystick],
+	   include_directories: [includes_src, includes_include],
+	   install: false)
+executable('example-gamepads',
+	   'examples/gamepads.c',
+	   dependencies: [dep_libjoystick],
+	   include_directories: [includes_src, includes_include],
+	   install: false)
+
 ############ output files ############
 configure_file(output: 'config.h', install: false, configuration: config_h)
