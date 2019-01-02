@@ -90,5 +90,18 @@ pkgconfig.generate(
 	libraries: lib_libjoystick
 )
 
+############ tests ############
+executable('test-build-c',
+	   'test/build-c.c',
+	   dependencies: [dep_libjoystick],
+	   include_directories: [includes_src, includes_include],
+	   install: false)
+
+executable('test-build-cxx',
+	   'test/build-cxx.cc',
+	   dependencies: [dep_libjoystick],
+	   include_directories: [includes_src, includes_include],
+	   install: false)
+
 ############ output files ############
 configure_file(output: 'config.h', install: false, configuration: config_h)
