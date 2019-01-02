@@ -1,0 +1,37 @@
+/* in alphabetical order! */
+
+LIBJOYSTICK_0.0.1 {
+global:
+	js_axis_has_capability;
+	js_button_compare_priority;
+	js_button_has_capability;
+	js_ctx_dispatch;
+	js_ctx_get_event;
+	js_ctx_get_fd;
+	js_ctx_get_user_data;
+	js_ctx_ref;
+	js_ctx_set_user_data;
+	js_ctx_unref;
+	js_device_get_axis;
+	js_device_get_axis_count;
+	js_device_get_button;
+	js_device_get_button_count;
+	js_device_get_dpad;
+	js_device_get_dpad_count;
+	js_device_get_name;
+	js_dpad_has_capability;
+	js_event_axis_get_value;
+	js_event_axis_has_changed;
+	js_event_button_get_state;
+	js_event_button_get_value;
+	js_event_button_state_has_changed;
+	js_event_button_value_has_changed;
+	js_event_destroy;
+	js_event_dpad_get_state;
+	js_event_get_device;
+	js_event_get_type;
+local:
+	*;
+};
+
+
