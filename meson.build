@@ -90,6 +90,11 @@ pkgconfig.generate(
 	libraries: lib_libjoystick
 )
 
+############ documentation ############
+if get_option('documentation')
+	subdir('doc')
+endif
+
 ############ tests ############
 executable('test-build-c',
 	   'test/build-c.c',
